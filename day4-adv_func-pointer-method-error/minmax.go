@@ -5,8 +5,8 @@ import (
 )
 
 func findMinMax(numbers *[6]int) (int, int) {
-	min := (*numbers)[0]
-	max := (*numbers)[0]
+	min := (*numbers)[0] // Ini adalah dereferencing
+	max := (*numbers)[0] // Ini juga dereferencing
 
 	for _, num := range *numbers {
 		if num < min {
